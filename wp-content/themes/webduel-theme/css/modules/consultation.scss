@@ -1,0 +1,84 @@
+.consultation-page {
+  margin: 100px 0;
+}
+.consultation-page .flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  flex-direction: row;
+}
+.consultation-page .flex > div {
+  width: 50%;
+  max-width: 500px;
+  margin: 20px 20px;
+  height: auto;
+}
+@media (max-width: 1100px) {
+  .consultation-page .flex > div {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px 20px;
+  }
+}
+
+.consultation-page .flex .form .column-font-size {
+  margin-bottom: 20px;
+}
+/*stamp */
+.consultation-page .right-bar {
+  background: #efeae5;
+  padding: 40px 10px;
+  height: auto;
+}
+.consultation-page .stamp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.consultation-page .stamp i {
+  font-size: 60px;
+  font-weight: 100;
+  margin: 0 auto;
+  display: block;
+}
+.consultation-page .stamp .section-font-size {
+  letter-spacing: 2px;
+}
+.consultation-page .stamp a {
+  margin-top: 20px;
+}
+@media (max-width: 500px) {
+  .consultation-page .hero-section {
+    width: 100%;
+    height: auto;
+  }
+
+  .consultation-page .stamp a {
+    padding: 18px 10px !important;
+    font-size: 12px;
+  }
+}
+
+/*services */
+
+.consultation-page .services {
+  height: auto;
+  padding: 0 10px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.consultation-page .services .cards {
+  margin: 30px 0;
+}
+.consultation-page .services .cards .underline {
+  width: 100px;
+  margin: 20px auto;
+}
+.consultation-page .services .cards .paragraph p {
+  font-family: "work sans", sans-serif;
+  font-size: 14px;
+}

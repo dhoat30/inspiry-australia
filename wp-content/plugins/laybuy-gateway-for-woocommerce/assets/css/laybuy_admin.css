@@ -1,0 +1,9 @@
+#wp-category_pages_info_text-wrap, #wp-category_pages_info_text-wrap + .description, #wp-product_pages_info_text-wrap, #wp-product_pages_info_text-wrap + .description , #woocommerce_laybuy_cart_page_info_text, #woocommerce_laybuy_cart_page_info_text + .description, #wp-checkout_page_info_text-wrap, #wp-checkout_page_info_text-wrap + .description{
+    display:none ;
+}
+.currency-select {
+    height: 100%!important;
+}
+.credentials {
+    /*display: none;*/
+}

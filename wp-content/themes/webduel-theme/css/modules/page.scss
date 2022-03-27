@@ -1,0 +1,47 @@
+.general-page-template .row-container div {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.general-page-template h1 {
+  font-size: 40px !important;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 30px 0;
+}
+.general-page-template h2 {
+  margin: 0 0 5px 0;
+  font-weight: 600;
+  font-size: 20px;
+}
+.general-page-template p,
+span,
+.paragraph {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5em;
+}
+.general-page-template p span {
+  font-weight: 600 !important;
+}
+.general-page-template .paragraph {
+  margin: 10px 0 50px 0 !important;
+}
+
+.general-page-template a {
+  color: #303030;
+}
+
+.general-page-template .bold {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
+/*unordered list*/
+.general-page-template ol {
+  margin: -30px 0 0 0;
+}
+.general-page-template li {
+  font-family: var(--openSans);
+  line-height: 1.5em;
+  letter-spacing: 1px;
+  margin: 0px 0 10px 20px;
+}

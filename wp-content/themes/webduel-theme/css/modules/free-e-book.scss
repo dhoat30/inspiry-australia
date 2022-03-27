@@ -1,0 +1,87 @@
+.free-e-book {
+  margin: 50px 0;
+}
+.free-e-book .hero-section img {
+  max-width: 800px;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+/*second Section */
+.free-e-book .second-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 50px auto 0 auto;
+}
+.free-e-book .second-section > div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 0 20px 0;
+}
+.free-e-book .second-section .medium-font-sizeium {
+  padding: 0 10px;
+  max-width: 500px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.7em;
+  font-weight: 900;
+  font-size: 22px;
+}
+.free-e-book .second-section img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+@media (max-width: 600px) {
+  .free-e-book .second-section > div {
+    width: 100%;
+  }
+}
+/*form section*/
+.free-e-book .form {
+  margin-top: 100px;
+}
+.free-e-book .form .form-box {
+  background: #efeae5;
+  padding: 20px;
+  max-width: 500px;
+  margin: 20px auto 0 auto;
+}
+.free-e-book .mc4wp-form-fields {
+  max-width: 250px;
+  margin: 0 auto;
+}
+.free-e-book .mc4wp-form-fields input {
+  display: block;
+  padding: 5px;
+  width: 250px;
+  margin: 7px 0;
+  border: none;
+  height: 40px;
+}
+.free-e-book .mc4wp-form-fields input[type="submit"] {
+  background: #303030;
+  color: white;
+  cursor: pointer;
+}
+.free-e-book .mc4wp-form-fields input[type="submit"]:hover {
+  background: white;
+  color: #303030;
+  border: 1px solid #303030;
+}
+.mc4wp-alert p {
+  text-align: center;
+  font-family: var(--openSans);
+}
+
+/*last section */
+.free-e-book .last-section {
+  max-width: 800px;
+  margin: 100px auto 0 auto;
+}

@@ -1,0 +1,258 @@
+/*calculator*/
+
+.body-container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.overlay-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+
+  transition-timing-function: ease-in-out;
+}
+.overlay-background--visible {
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+}
+.calculator-overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  width: 80%;
+  height: 90vh;
+  background-color: white;
+  opacity: 0;
+  z-index: -2;
+  transition-timing-function: ease-in-out;
+  overflow-y: scroll;
+}
+
+.calculator-overlay--visible {
+  opacity: 1;
+  z-index: 2;
+}
+
+/*calculator form styling*/
+.wallpaper-calculator-modal h1 {
+  font-size: 25px;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 10px !important;
+}
+
+#wallpaper-calculator select {
+  display: block;
+  width: 100%;
+  margin: 7px 0 20px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 11px 15px;
+}
+
+#wallpaper-calculator input[type="text"] {
+  width: 100%;
+  padding: 11px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 20px;
+  resize: vertical;
+  font-size: 16px;
+  color: #576166;
+  vertical-align: middle;
+  background-color: #efefef;
+}
+#wallpaper-calculator input[type="text"]:focus {
+  color: black;
+}
+#wallpaper-calculator label {
+  margin-bottom: 5px;
+  display: block;
+}
+.estimate-result {
+  background-color: #fff1eb;
+  padding: 20px 20px;
+}
+.estimate-result h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.estimate-result p {
+  font-size: 30px;
+}
+
+.calculator-overlay button {
+  background: #303030 !important;
+  border-radius: 0% !important;
+  color: white;
+}
+.calculator-overlay button:hover {
+  background: white !important;
+  color: #303030 !important;
+  outline: #303030 solid 1px;
+}
+
+/*inspiry calculator*/
+
+/*popup overlay*/
+#calculator-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.wallpaper-calculator-modal {
+  width: 40%;
+}
+
+.wallpaper-calculator-modal h1 {
+  font-family: inherit;
+  text-align: center;
+  text-transform: inherit !important;
+  margin-bottom: 10px !important;
+}
+
+.popup-modal-overlay {
+  position: fixed;
+  z-index: 1010;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+  display: none;
+}
+
+.popup-modal-overlay.has-open-modal {
+  display: block;
+}
+
+.popup-modal {
+  background-color: #fff;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  padding: 45px 15px 20px;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1011;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: none;
+}
+
+.calculator-overlay .close {
+  text-decoration-line: none;
+  position: absolute;
+  font-size: 2.5rem;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: inherit;
+  z-index: 2000;
+  color: #303030;
+}
+.calculator-overlay .close:hover {
+  color: #525659;
+}
+
+.popup-modal.is-open {
+  opacity: 1;
+  display: inherit;
+  pointer-events: auto;
+}
+
+#wallpaper-calculator > section:first-child {
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 10px 20px;
+}
+
+#wallpaper-calculator section:first-child > div {
+  grid-column: 1 / span 2;
+}
+
+#wallpaper-calculator aside {
+  width: auto;
+  padding: 5px 0;
+}
+
+#wallpaper-calculator .input-group {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#wallpaper-calculator .input-group input {
+  margin: 0;
+}
+
+div .input-group-addon {
+  padding: 0;
+  position: static;
+}
+
+@media only screen and (max-width: 1700px) {
+  .wallpaper-calculator-modal {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .wallpaper-calculator-modal {
+    width: 80%;
+  }
+
+  .popup-modal {
+    overflow-y: scroll;
+  }
+}
+
+@media only screen and (max-width: 967px) {
+  .wallpaper-calculator-modal {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  /*#wallpaper-calculator aside {
+          width: 100%;
+      } 
+  
+      #wallpaper-calculator .input-group {
+          display: block;
+      }
+      
+  
+      #wallpaper-calculator .input-group input {
+          width: 90%;
+      } 
+  }
+  
+  @media only screen and (max-width: 500px) {
+      #wallpaper-calculator .input-group input {
+          width: 85%;
+      }
+  }
+  */
+}

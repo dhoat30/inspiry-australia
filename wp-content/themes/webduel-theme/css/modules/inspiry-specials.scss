@@ -1,0 +1,55 @@
+.inspiry-specials .hero-section {
+  height: 500px;
+  background-position: center !important;
+  /* background-attachment: fixed !important; */
+  position: relative;
+}
+
+.inspiry-specials .content {
+  width: 100%;
+  max-width: 750px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.6);
+  padding: 50px 0;
+}
+.inspiry-specials .content h1 {
+  margin: 0;
+  letter-spacing: 0.3rem;
+  text-align: center;
+  text-transform: uppercase !important;
+}
+/* cards */
+.inspiry-specials .special-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  padding: 80px 0 50px 0;
+}
+.inspiry-specials .special-cards .card {
+  width: 47%;
+  margin: 10px;
+}
+.inspiry-specials .special-cards .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition);
+  cursor: pointer;
+}
+.inspiry-specials .special-cards .card img:hover {
+  transform: scale(1.03);
+}
+@media (max-width: 720px) {
+  .inspiry-specials .special-cards .card {
+    width: 100%;
+    margin: 10px;
+  }
+  .inspiry-specials .special-cards {
+    padding: 30px 0 30px 0;
+  }
+}

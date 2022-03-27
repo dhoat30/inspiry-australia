@@ -1,0 +1,122 @@
+.create-account-page .background-image {
+  width: 100%;
+  height: auto;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+.create-account-page .content {
+  max-width: 500px;
+  width: 100%;
+  background: var(--white);
+  padding: 30px 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+@media (max-width: 450px) {
+  .create-account-page .content {
+    padding: 30px 10px;
+    margin: 0 10px;
+  }
+}
+.create-account-page .content .vertical-border {
+  margin: 50px 0 0 0;
+}
+
+/* create account container */
+.create-account-page .create-account-container {
+  width: 100%;
+}
+.create-account-page .content .title {
+  font-size: var(--columnSize);
+  font-weight: var(--regular);
+}
+
+/* form */
+.create-account-page #create-account {
+  margin-top: 20px;
+}
+.create-account-page #create-account input {
+  display: block;
+  border: 1px solid var(--darkGrey);
+  color: #333333;
+  font-size: 15px;
+  height: 40px;
+  width: 100%;
+  margin: 3px 0 15px 0;
+  padding: 0 5px;
+}
+
+.create-account-page #create-account label {
+  font-size: var(--mediumSize);
+  color: var(--black);
+  width: 100%;
+}
+.create-account-page #create-account .name-container {
+  display: flex;
+  gap: 15px;
+}
+.create-account-page #create-account .name-container .input-item {
+  width: 100%;
+}
+.create-account-page #create-account .divider {
+  font-size: var(--paragraphSize);
+  text-align: center;
+  margin: 5px 0;
+}
+@media (max-width: 450px) {
+  .create-account-page #create-account .name-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+/* checkbox container */
+.create-account-page #create-account .checkbox-container {
+  display: flex;
+  align-items: center;
+}
+.create-account-page #create-account .checkbox-container input {
+  width: 15px;
+  height: 15px;
+  border-radius: 0;
+  margin: 0 5px 0 0;
+}
+.create-account-page #create-account .checkbox-container label {
+  font-size: var(--paragraphSize);
+}
+/* buttons  */
+.create-account-page #create-account .primary-button {
+  margin-top: 20px;
+  display: block;
+  width: 100%;
+}
+
+/* terms */
+.create-account-page #create-account .terms {
+  font-size: var(--paragraphSize) !important;
+  display: block !important;
+  width: 100%;
+  margin-top: 10px;
+}
+.create-account-page #create-account .terms a {
+  font-size: var(--paragraphSize) !important;
+  text-decoration: underline;
+}
+
+/* facebook button */
+.create-account-page #create-account .fbBtn {
+  margin-top: 10px;
+}
+
+.create-account-page p.status {
+  margin: -20px 0 10px 0;
+  display: none;
+  font-size: var(--paragraphSize);
+  color: var(--red);
+}

@@ -1,0 +1,107 @@
+.slider {
+  width: 100%;
+  position: relative;
+  padding-bottom: 43.75%;
+}
+.slider-container {
+  position: relative;
+}
+.slider img {
+  width: 100%;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  display: none;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.slide.current {
+  display: block;
+}
+
+.slide .content h1 {
+  color: white;
+  padding: 10px 0;
+  max-width: 900px;
+  margin: 0 auto 0px auto;
+}
+.slide .content a {
+  color: white;
+  margin: 0 auto 10px auto;
+  text-align: center;
+  display: block;
+}
+.slide .content a:hover {
+  text-decoration: underline;
+}
+.slide.current .content {
+  opacity: 1;
+  transition: all 0.7s ease-in-out 0.3s;
+}
+
+.slider-container .buttons button#next {
+  right: 15px;
+}
+
+.slider-container .buttons button#prev {
+  left: 15px;
+}
+
+.slider-container .buttons button {
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  padding: 13px 15px;
+  border-radius: 50%;
+  outline: none;
+  position: absolute;
+  top: 50%;
+  z-index: 4;
+  transform: translate(0, -50%);
+}
+.slider-container i {
+  color: white;
+}
+.slider-container i:hover {
+  color: #333;
+}
+.slider-container .buttons button:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+/* @media (max-width: 600px) {
+  .buttons button#next {
+    position: absolute;
+    top: 80%;
+    right: 15px;
+    z-index: 4;
+  }
+
+  .buttons button#prev {
+    position: absolute;
+    top: 80%;
+    left: 15px;
+    z-index: 4;
+  }
+} */
+
+@media (max-width: 465px) {
+  .slider {
+    width: 100%;
+    position: relative;
+    padding-bottom: 100%;
+  }
+  .slider-container {
+    position: relative;
+  }
+  .slider img {
+    width: 100%;
+  }
+}

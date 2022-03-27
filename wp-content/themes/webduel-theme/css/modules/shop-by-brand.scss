@@ -1,0 +1,41 @@
+/*second section */
+.shop-by-brand .second-section {
+  margin-top: 50px;
+}
+.shop-by-brand .second-section .flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+}
+.shop-by-brand .second-section .flex .cards {
+  width: 45%;
+  margin: 20px;
+  position: relative;
+}
+.shop-by-brand .second-section .flex .cards img {
+  width: 100% !important;
+  height: 700px;
+  object-fit: cover;
+  transition: 300ms ease-in-out;
+}
+.shop-by-brand .second-section .flex .cards img:hover {
+  transform: scale(1.02);
+}
+.shop-by-brand .second-section .flex .cards .medium-font-size {
+  margin: 20px 0 10px 0 !important;
+  position: relative;
+  text-transform: uppercase;
+}
+
+@media (max-width: 600px) {
+  .shop-by-brand .second-section .flex .cards {
+    width: 100%;
+    margin: 20px;
+    position: relative;
+  }
+  .shop-by-brand .second-section .flex .cards img {
+    width: 100% !important;
+    height: 400px;
+  }
+}

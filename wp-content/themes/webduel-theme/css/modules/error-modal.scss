@@ -1,0 +1,52 @@
+.error-modal {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 8;
+  display: none;
+
+  .container {
+    position: fixed;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0 0 0;
+    width: 100%;
+    max-width: 350px;
+    i {
+      text-align: center;
+      color: var(--errorRed);
+      font-size: 3rem;
+    }
+    .content {
+      font-size: var(--mediumSize);
+      color: var(--grey);
+      margin: 10px 20px 20px 20px;
+      text-align: center;
+    }
+    button {
+      display: block;
+      width: 100%;
+      background: var(--errorRed);
+      border: none;
+      cursor: pointer;
+      padding: 10px 0;
+      color: var(--white);
+      font-size: var(--paragraphSize);
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+  }
+}

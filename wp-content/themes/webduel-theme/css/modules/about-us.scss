@@ -1,0 +1,141 @@
+.about-us .hero-bg {
+  width: 100%;
+  padding-bottom: 50%;
+  background-size: cover !important;
+  background-position: bottom !important;
+}
+.about-us {
+  position: relative;
+}
+.about-us .hero-bg h1 {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 3rem;
+}
+@media (max-width: 1000px) {
+  .about-us .hero-bg h1 {
+    top: 20px;
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .about-us .hero-bg h1 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    top: 20px;
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .about-us .hero-bg h1 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    top: 20px;
+    width: 100%;
+  }
+  .about-us .hero-bg {
+    width: 100%;
+    padding-bottom: 90%;
+    background-size: cover !important;
+    background-position: bottom !important;
+  }
+}
+.about-us .hero-bg h1 p {
+  color: white;
+  text-align: center;
+  font-family: var(--playfairDisplay) !important;
+}
+
+.about-us .first-section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 50px auto;
+}
+
+.about-us .first-section > div:nth-child(1) {
+  width: 35%;
+  margin: 20px;
+}
+.about-us .first-section > div:nth-child(2) {
+  width: 50%;
+  margin: 20px;
+}
+.about-us .first-section img {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .about-us .first-section > div:nth-child(1) {
+    width: 100%;
+    margin: 20px;
+  }
+  .about-us .first-section > div:nth-child(2) {
+    width: 100%;
+    margin: 20px;
+  }
+}
+
+/* second section */
+
+.about-us .flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 150px auto;
+  flex-wrap: nowrap;
+}
+
+.about-us .flex-row > div:nth-child(1) {
+  width: 55%;
+  margin: 20px;
+}
+
+.about-us .flex-row > div:nth-child(2) {
+  width: 45%;
+  margin: 20px;
+}
+
+.about-us .reverse-row {
+  flex-direction: row-reverse !important;
+}
+
+@media (max-width: 1200px) {
+  .about-us .flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 50px auto;
+    flex-wrap: wrap;
+  }
+
+  .about-us .flex-row > div:nth-child(1) {
+    width: 100%;
+    margin: 20px;
+  }
+  .about-us .flex-row > div:nth-child(2) {
+    width: 100%;
+    margin: 20px;
+  }
+}
+
+/* content styling */
+.about-us .flex-row p {
+  margin: 10px 0 0 0;
+}
+
+.about-us .slogan h4 {
+  font-size: 2rem;
+  font-weight: 400 !important;
+  max-width: 900px;
+  margin: 0 auto;
+}

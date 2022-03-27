@@ -1,0 +1,330 @@
+/* scrollbar */
+/* width */
+.facetwp-facet::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.facetwp-facet::-webkit-scrollbar-track {
+  background: var(--beige);
+}
+
+/* Handle */
+.facetwp-facet::-webkit-scrollbar-thumb {
+  background: var(--grey);
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+.facetwp-facet::-webkit-scrollbar-thumb:hover {
+  background: var(--darkGrey);
+}
+/* facet filter */
+.facet-wp-container {
+  max-width: 280px;
+  margin-bottom: 30px;
+  background: white;
+  align-self: flex-start;
+  display: none;
+  width: 100%;
+  margin-right: 40px;
+  .desktop {
+    .secondary-button {
+      display: block;
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+
+  /* position: sticky;
+  top: 0; */
+}
+
+.facet-wrap {
+  .facet-label-button {
+    padding: 10px 0;
+    position: relative;
+
+    background-color: none;
+    .facet-label {
+      display: block;
+      width: 100%;
+      font-weight: 500;
+      font-size: 1rem;
+      text-transform: uppercase;
+      cursor: pointer;
+      position: relative;
+      z-index: 1;
+      background-color: var(--white);
+      text-align: left;
+      border: none;
+      text-transform: capitalize;
+      font-size: var(--mediumSize);
+      color: var(--grey);
+      font-weight: var(--regular);
+      i {
+        color: var(--grey);
+        position: absolute;
+        right: 0;
+        top: 50%;
+        z-index: -1;
+        transform: translate(0, -50%);
+      }
+    }
+  }
+}
+
+.facet-wp-container .desktop .facetwp-facet {
+  margin: 5px 0 15px 0 !important;
+  height: 100%;
+  overflow-y: auto;
+  max-height: 150px;
+  position: relative;
+}
+.facet-wrap {
+  border-bottom: 2px solid var(--offWhite);
+}
+
+.facetwp-checkbox {
+  font-family: var(--poppins);
+  font-weight: 300;
+  color: var(--grey);
+  padding-right: 10px;
+  font-size: 0.9rem;
+}
+.facetwp-checkbox span {
+  font-family: var(--poppins);
+  font-weight: 300;
+  color: var(--grey);
+  font-size: 0.9rem;
+}
+.facetwp-checkbox:hover {
+  color: var(--darkGrey);
+}
+.facetwp-checkbox:hover span {
+  color: var(--darkGrey);
+}
+
+/* dropdown styling  */
+.fs-dropdown {
+  width: 100% !important;
+}
+/* price facet wp */
+.facet-wp-container .noUi-connect {
+  background: var(--darkGrey);
+}
+.facetwp-facet-price_range {
+  display: block !important;
+  height: 60px;
+  overflow: hidden;
+}
+
+/* reset button  */
+.facetwp-slider-reset {
+  display: none;
+}
+// .facet-reset-btn {
+//   margin-top: 20px;
+//   display: block;
+//   width: 100%;
+//   background: none;
+//   font-size: 1rem;
+//   padding: 10px 0;
+//   text-transform: uppercase;
+//   color: var(--darkGrey);
+//   border: 1px solid var(--darkGrey);
+//   font-size: var(--paragraphSize);
+// }
+// .facet-reset-btn:hover {
+//   background: var(--darkGrey);
+//   color: white;
+// }
+/* section title */
+.filter-title i {
+  color: white;
+}
+.filter-title {
+  margin-bottom: 10px !important;
+  border: 1px solid var(--darkGrey);
+  background: var(--darkGrey);
+  color: white;
+  padding: 5px 5px;
+}
+@media (max-width: 1100px) {
+  .filter-title {
+    background: none;
+    color: var(--darkGrey);
+  }
+  .filter-title i {
+    color: var(--darkGrey);
+  }
+}
+/* mobile filter button  */
+
+.mobile .filter-title {
+  text-align: center !important;
+  width: 150px;
+  margin: 0 auto !important;
+  cursor: pointer;
+  display: none;
+  position: sticky;
+  top: 10px;
+  z-index: 100;
+  background: white;
+}
+
+.mobile .filter-title:hover {
+  background: none;
+  color: var(--darkGrey);
+}
+.mobile .filter-title:hover i {
+  background: none;
+  color: var(--darkGrey);
+}
+
+/* facet settings */
+.facet-single-filter {
+  height: 150px !important;
+  overflow-y: scroll;
+}
+.breadcrumb-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.mobile-filter-container {
+  display: none;
+}
+@media (max-width: 1110px) {
+  .facet-wp-container {
+    position: fixed;
+    background: white;
+    width: 100%;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    padding: 30px 10px;
+    height: auto;
+    overflow: auto;
+    display: none;
+  }
+  .facet-wp-container .desktop {
+    display: none;
+  }
+  .mobile .filter-title {
+    display: block;
+    position: sticky !important;
+    top: 0;
+  }
+  .mobile-filter-container {
+    display: block !important;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+
+    top: 0;
+    left: 0;
+    overflow: auto;
+    background-color: var(--white);
+    padding: 0;
+    .close-icon {
+      color: var(--darkGrey);
+      position: absolute;
+      top: 20px;
+    }
+    .mobile-filters {
+      margin-top: 70px;
+      .button-containers {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15px;
+        flex-wrap: wrap;
+        button {
+          margin: 5px 5px;
+          text-transform: uppercase;
+        }
+      }
+    }
+    /* mobile styling */
+    .facet-label {
+      font-size: 0.8rem;
+    }
+    .facetwp-facet {
+      margin: 5px 0 5px 0 !important;
+      background-color: var(--beige);
+
+      .fs-label-wrap {
+        border: none;
+        .fs-label {
+          color: var(--grey);
+          padding: 10px 10px;
+          font-size: var(--mediumSize);
+          background-color: var(--beige);
+          font-weight: var(--medium);
+        }
+
+        .fs-checkbox i {
+          border-radius: 0 !important;
+          width: 20px !important;
+          height: 20px !important;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1100px) {
+  .container .facet-wp-container .mobile-filter-container {
+    display: block;
+  }
+}
+
+.fs-wrap {
+  display: block;
+  width: 100%;
+}
+.fs-label-wrap {
+  width: 100% !important;
+  display: block !important;
+}
+
+/* reset button */
+
+.mobile-filter-container .show-results {
+  background: var(--darkGrey);
+  color: white;
+}
+
+/* fixed filter button */
+
+.fixed-filter-button {
+  text-align: center;
+  background: var(--darkGrey);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: none;
+  z-index: 1000;
+}
+.fixed-filter-button .filter-title {
+  margin-bottom: 0 !important;
+  border: none !important;
+  color: var(--offWhite);
+  cursor: pointer;
+}
+.fixed-filter-button .filter-title i {
+  color: var(--offWhite);
+}
+
+@media (min-width: 1100px) {
+  .fixed-filter-button {
+    display: none !important;
+  }
+}
+@media (min-width: 1100px) {
+  .facet-wp-container .facetwp-facet {
+    display: none;
+  }
+}

@@ -1,0 +1,18 @@
+.accordion-block-container {
+  padding: 20px;
+  border: 2px;
+  border: 1px solid #d6d6d6;
+  background-color: #f1f1f1;
+}
+.attention-delete {
+  margin-bottom: 20px !important;
+  padding: 0 !important;
+  color: #ff0000 !important;
+  &:hover {
+    color: #c20000 !important;
+  }
+}
+.faq-item {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #d6d6d6 !important;
+}

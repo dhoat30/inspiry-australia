@@ -1,0 +1,54 @@
+/* cart deal modal */
+.cart-deal-modal {
+  position: fixed;
+  z-index: 2001;
+  background: var(--beige);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 700px;
+  width: 100%;
+  padding: 40px;
+  display: none;
+}
+.cart-deal-modal .image-container img {
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin: 20px auto;
+}
+.cart-deal-modal .button {
+  margin: 0 auto !important;
+  display: block !important;
+  width: 200px;
+  text-align: center;
+}
+.cart-deal-modal .fa-times {
+  position: absolute;
+  top: 10px !important;
+  right: 10px !important;
+}
+.cart-deal-modal .content {
+  border: 2px solid var(--darkGrey);
+  padding: 20px;
+}
+@media (max-width: 550px) {
+  .cart-deal-modal {
+    padding: 40px 5px;
+  }
+  .cart-deal-modal .content {
+    padding: 5px;
+  }
+  .cart-deal-modal .fa-times {
+    top: 5px !important;
+    right: 5px !important;
+  }
+  .cart-deal-modal .image-container img {
+    width: 60%;
+  }
+}
+@media (max-width: 320px) {
+  .cart-deal-modal .image-container img {
+    width: 50%;
+  }
+}

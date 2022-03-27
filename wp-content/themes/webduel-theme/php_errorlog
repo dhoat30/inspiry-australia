@@ -1,0 +1,8 @@
+[23-Nov-2020 12:54:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/customer/www/inspiry.co.nz/public_html/wp-content/themes/inspiry-theme/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/inspiry.co.nz/public_html/wp-content/themes/inspiry-theme/index.php on line 2
+[15-Feb-2021 22:13:49 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/customer/www/inspiry.co.nz/public_html/wp-content/themes/inspiry-theme/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/inspiry.co.nz/public_html/wp-content/themes/inspiry-theme/index.php on line 2

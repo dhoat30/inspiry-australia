@@ -1,0 +1,188 @@
+.footer-newsletter-section {
+  background-color: var(--beige);
+  padding: 35px 0;
+  border: 1px solid var(--lightGrey);
+  .flex-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1100px !important;
+    @media (max-width: 900px) {
+      flex-direction: column;
+    }
+    .content {
+      .title {
+        font-size: var(--columnSize);
+        font-weight: var(--regular);
+        color: var(--darkGrey);
+      }
+      .subtitle {
+        font-size: var(--paragraphSize);
+        font-weight: var(--regular);
+        color: var(--grey);
+        margin-top: 10px;
+      }
+    }
+    .form {
+      @media (max-width: 900px) {
+        margin-top: 10px;
+      }
+      .label {
+        font-size: var(--paragraphSize);
+        color: var(--darkGrey);
+      }
+      .mc4wp-form-fields {
+        margin-top: 5px;
+        display: flex;
+        @media (max-width: 600px) {
+          flex-direction: column;
+        }
+        input {
+          padding: 5px;
+          font-size: var(--paragraphSize);
+          color: var(--grey);
+          border-radius: 0;
+          border: 1px solid var(--darkGrey);
+          margin-right: 5px;
+          height: 40px;
+          width: 400px;
+          @media (max-width: 600px) {
+            width: 92vw;
+            display: block;
+            margin-bottom: 10px;
+            max-width: 100%;
+          }
+        }
+        .primary-button {
+          width: 120px;
+          height: 40px;
+        }
+      }
+    }
+  }
+  .privacy-policy {
+    max-width: 1100px !important;
+    font-size: 0.7rem;
+    color: var(--grey);
+    margin-top: 30px;
+    @media (max-width: 400px) {
+      margin-top: 10px;
+    }
+  }
+}
+
+footer {
+  background: var(--beige);
+  .flex-container {
+    padding: 30px 0;
+    @media (max-width: 600px) {
+      padding: 20px 0 10px 0;
+    }
+    max-width: 1100px !important;
+    .columns {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .flex-item {
+        margin: 0 10px 20px 10px;
+        .title {
+          font-size: var(--mediumSize);
+          font-weight: var(--regular);
+          color: var(--darkGrey);
+        }
+        .nav {
+          margin-top: 15px;
+          ul {
+            list-style: none;
+            li {
+              font-size: var(--paragraphSize);
+              color: var(--grey);
+              margin: 10px 0;
+              a {
+                text-decoration: none;
+                color: var(--grey);
+                letter-spacing: 0.06rem;
+                &:hover {
+                  text-decoration: underline;
+                }
+              }
+            }
+          }
+        }
+      }
+      .social {
+        .social-icons {
+          a {
+            text-decoration: none;
+            font-size: 1.5rem;
+            margin: 0 10px 0 0;
+            i {
+              color: var(--grey);
+              &:hover {
+                color: var(--black);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .copyright-section {
+    padding: 25px 0;
+    @media (max-width: 600px) {
+      padding: 10px 0;
+    }
+    .columns {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      .links {
+        margin-bottom: 5px;
+        a {
+          font-size: var(--paragraphSize);
+          color: var(--grey);
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+        .first-child {
+          &::after {
+            color: #ccc;
+            content: "|";
+            display: inline-block;
+            margin: 0 10px;
+          }
+        }
+      }
+    }
+    .copyright {
+      font-size: 0.7rem;
+      color: var(--grey);
+    }
+  }
+}
+
+// arrow up
+/* arrow to the header */
+.go-to-header {
+  position: fixed;
+  top: 50%;
+  right: 10px;
+  transform: translate(0, -50%);
+  z-index: 10000;
+}
+.go-to-header a i {
+  font-size: 40px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0px 10px;
+  color: white;
+}
+.show {
+  display: block !important;
+}
+.hide {
+  display: none;
+}

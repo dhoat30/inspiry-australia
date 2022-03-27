@@ -1,0 +1,127 @@
+.contact-us-page{ 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items:center;
+}
+.contact-page .hero-section-img{ 
+    max-width: 800px;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+.contact-us-page>div{ 
+    width:40%;
+}
+@media only screen and (max-width: 700px){ 
+    .contact-us-page>div{ 
+        width:100%;
+    }
+}
+
+/*form*/ 
+.contact-us-page input[type="button"]{ 
+  background: #F8F7F3 !important;
+  width: 200px !important;
+  font-family: 'Playfair Display', serif !important;
+}
+.contact-us-page label{ 
+    font-weight: 500 !important;
+     font-family: 'Roboto', sans-serif !important;
+  }
+  
+  .nf-form-fields-required{ 
+      display:none;
+  }
+
+/*contact info*/ 
+.contact-us-page .contact { 
+    max-width: 340px;
+ 
+}
+.contact-us-page .contact-info a{
+    font-size: 18px;
+    margin: 5px 0;
+    display: inline-block;
+}
+.contact-us-page .contact-info a:hover{
+    text-decoration: none !important;
+}
+.contact-us-page .contact-info i{ 
+    font-size: 22px;
+    padding-right: 10px;
+}
+.fab{ 
+    border-radius: 50% !important;
+}
+.fa-instagram-square{ 
+    border-radius: 50% !important;
+}
+/*social media*/ 
+.contact-us-page .social-media{ 
+    margin: 20px 0;
+    width: 200px;
+}
+.contact-us-page .social-media a{ 
+    font-size: 40px;
+    color: #303030;
+    display: inline-block;
+    margin: 10px 5px 0 0; 
+}
+
+.nf-field-element input[type="button"]{ 
+    background: #303030 !important;
+    color: white !important;
+}
+.nf-field-element input[type="button"]{ 
+    background: #303030 !important;
+    color: white !important;
+}
+.nf-field-element input[type="button"]:hover{ 
+    border: 1px solid #303030 !important;
+    color: #303030 !important;
+    background-color: white;
+}
+
+/*inspiry trade*/ 
+.contact-page .trade-usp{ 
+    background:#EFEAE5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 30px;
+    margin: 50px 0;
+}
+.contact-page .trade-usp>div{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 300px;
+    margin: 20px 10px;
+}
+.contact-page .trade-usp>div i{ 
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+
+
+/*quotes*/ 
+.contact-page .testimonials{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 30px;
+    margin: 10px 0;
+}
+.contact-page .testimonials>div{ 
+    max-width: 300px;
+    margin: 0px 10px 50px 10px;
+}
+.contact-page .testimonials>div i{ 
+    font-size: 30px;
+    padding-bottom: 10px;
+}
